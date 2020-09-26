@@ -1,15 +1,14 @@
 ---
-# tasks file for test_db
+# tasks file for mysql_db
 
 - name: Install dependencies
   apt:
-#    name: ['python', 'python-setuptools', 'python-dev', 'build-essential', 'python-pip', 'python-mysqldb','python-apt','python3-apt','python3-pymysql','python-pymysql']
     name: ['python', 'python-setuptools', 'python-dev', 'build-essential', 'python-pip', 'python-mysqldb']
     state: present
 
 - name: Install MySQL database
   apt:
-    name: ['mysql-server', 'mysql-client']
+    name: ['mysql-server', 'mysql-client', 'libmysqlclient-dev']
     state: present
 
 - name: Start MySQL Service

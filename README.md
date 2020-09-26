@@ -1,7 +1,7 @@
 MYSQL DB
 =========
 
-This roles installs Mysql database.
+This role installs MySQL database and its dependencies.
 
 Requirements
 ------------
